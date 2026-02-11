@@ -31,7 +31,7 @@ if prompt := st.chat_input("Ilaaqe ka naam likhein (e.g. Surjani Town or DHA Pha
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        with st.spinner("Market ki asliyat check ho rahi hai..."):
+        with st.spinner("Analysing the market..."):
             try:
                 # 1. Enhanced Search Query for Ground Realities
                 tavily = TavilyClient(api_key=t_key)
@@ -50,7 +50,7 @@ if prompt := st.chat_input("Ilaaqe ka naam likhein (e.g. Surjani Town or DHA Pha
                         - Discuss Security (Chori-chakari ka scene kaisa hai?).
                         - Differentiate between 'Lease' and 'Goth' lands.
                         - Give an estimated price range but warn that it varies.
-                        - Speak in Roman Urdu like a seasoned broker. 
+                        - Speak in english like a seasoned broker. 
                         - Be realistic, not just a salesman."""},
                         *st.session_state.messages,
                         {"role": "user", "content": f"Live Market & Issues Data: {search['results']}"}
