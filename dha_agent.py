@@ -42,9 +42,8 @@ if prompt := st.chat_input("DHA Karachi ke baare mein poochein..."):
             messages=[
                 {"role": "system", "content": system_prompt},
                 *st.session_state.messages
-            ],
+            ]
         )
-        response = completion.choices[0].message.content
         st.markdown(response)
     
     st.session_state.messages.append({"role": "assistant", "content": response})
