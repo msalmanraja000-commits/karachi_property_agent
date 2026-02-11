@@ -26,7 +26,7 @@ model = genai.GenerativeModel(
 )
 
 st.title("🏝️ DHA Karachi AI Advisor")
-st.write("Welcome to The Caseton's automated property concierge.")
+st.write("Welcome to PropTec.AI's automated property concierge.")
 
 # 5. Chat Logic
 if "messages" not in st.session_state:
