@@ -39,11 +39,7 @@ if prompt := st.chat_input("DHA Karachi ke baare mein poochein..."):
         # Stable model name
         completion = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                *st.session_state.messages
-            ]
-        )
+           response = completion.choices[0].message.content
         st.markdown(response)
     
     st.session_state.messages.append({"role": "assistant", "content": response})
