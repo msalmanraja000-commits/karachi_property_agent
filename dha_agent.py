@@ -6,7 +6,7 @@ st.set_page_config(page_title="DHA Karachi AI Advisor", page_icon="🏝️")
 
 # 2. API Key Setup
 # Salman bhai, yahan apni Groq key lazmi dalein
-GROQ_API_KEY = ""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" " 
+GROQ_API_KEY = "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"
 
 client = Groq(api_key=GROQ_API_KEY)
 
